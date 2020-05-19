@@ -1,0 +1,8 @@
+{
+  "pluginsFile": "cypress/plugins/index.js",
+  "supportFile": "cypress/support/index.js",
+  "integrationFolder": "cypress/e2e",
+  "testFiles": "**/*.spec.js*",
+  "experimentalComponentTesting": true,
+  "componentFolder": "src"
+}
