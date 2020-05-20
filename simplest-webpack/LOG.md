@@ -7,6 +7,91 @@ This log will be updated commit-by-commit to allow you to time travel through th
 Test Status: red
 
 ```
+Unexpected token '<'
+
+This error originated from your test code, not from Cypress.
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure.
+
+Check your console for the stack trace or click this message to see where it originated from.
+```
+
+Cypress Errors (first load):
+
+```js
+Uncaught TypeError: Cannot read property 'stop' of null
+    at $Cypress.stop (cypress_runner.js:141675)
+    at Object._reRun (cypress_runner.js:171464)
+    at Socket.rerun (cypress_runner.js:171183)
+    at Socket.../socket/node_modules/component-emitter/index.js.Emitter.emit (cypress_runner.js:159478)
+    at Socket.../socket/node_modules/socket.io-client/lib/socket.js.Socket.onevent (cypress_runner.js:166020)
+    at Socket.../socket/node_modules/socket.io-client/lib/socket.js.Socket.onpacket (cypress_runner.js:165978)
+    at Manager.<anonymous> (cypress_runner.js:159336)
+    at Manager.../socket/node_modules/component-emitter/index.js.Emitter.emit (cypress_runner.js:159478)
+    at Manager.../socket/node_modules/socket.io-client/lib/manager.js.Manager.ondecoded (cypress_runner.js:165476)
+    at Decoder.<anonymous> (cypress_runner.js:159336)
+    at Decoder.../socket/node_modules/component-emitter/index.js.Emitter.emit (cypress_runner.js:159478)
+    at Decoder.../socket/node_modules/socket.io-circular-parser/index.js.Decoder.add (cypress_runner.js:164124)
+    at Manager.../socket/node_modules/socket.io-client/lib/manager.js.Manager.ondata (cypress_runner.js:165466)
+    at Socket.<anonymous> (cypress_runner.js:159336)
+    at Socket.../socket/node_modules/component-emitter/index.js.Emitter.emit (cypress_runner.js:159478)
+    at Socket.../socket/node_modules/engine.io-client/lib/socket.js.Socket.onPacket (cypress_runner.js:160022)
+0.foo.spec.js:1 Uncaught Uncaught SyntaxError: Unexpected token '<'
+
+This error originated from your test code, not from Cypress.
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure.
+
+Check your console for the stack trace or click this message to see where it originated from.
+bootstrap:105 Uncaught (in promise) ChunkLoadError: Loading chunk 0 failed.
+(missing: http://localhost:52977/__cypress/iframes/component/0.foo.spec.js)
+    at Function.requireEnsure [as e] (http://localhost:52977/__cypress/tests?p=src/foo.spec.js-057:106:26)
+    at Object../src/foo.spec.js (http://localhost:52977/__cypress/tests?p=src/foo.spec.js-057:211:21)
+    at __webpack_require__ (http://localhost:52977/__cypress/tests?p=src/foo.spec.js-057:64:30)
+    at Object.0 (http://localhost:52977/__cypress/tests?p=src/foo.spec.js-057:229:18)
+    at __webpack_require__ (http://localhost:52977/__cypress/tests?p=src/foo.spec.js-057:64:30)
+    at http://localhost:52977/__cypress/tests?p=src/foo.spec.js-057:199:18
+    at http://localhost:52977/__cypress/tests?p=src/foo.spec.js-057:202:10
+```
+
+
+Cypress Errors (hmr): 
+
+```js
+0.foo.spec.js:1 Uncaught Uncaught SyntaxError: Unexpected token '<'
+
+This error originated from your test code, not from Cypress.
+
+When Cypress detects uncaught errors originating from your test code it will automatically fail the current test.
+
+Cypress could not associate this error to any specific test.
+
+We dynamically generated a new test to display this failure.
+
+Check your console for the stack trace or click this message to see where it originated from.
+bootstrap:105 Uncaught (in promise) ChunkLoadError: Loading chunk 0 failed.
+(missing: http://localhost:52042/__cypress/iframes/component/0.foo.spec.js)
+    at Function.requireEnsure [as e] (http://localhost:52042/__cypress/tests?p=src/foo.spec.js-986:106:26)
+    at Object../src/foo.spec.js (http://localhost:52042/__cypress/tests?p=src/foo.spec.js-986:211:21)
+    at __webpack_require__ (http://localhost:52042/__cypress/tests?p=src/foo.spec.js-986:64:30)
+    at Object.0 (http://localhost:52042/__cypress/tests?p=src/foo.spec.js-986:229:18)
+    at __webpack_require__ (http://localhost:52042/__cypress/tests?p=src/foo.spec.js-986:64:30)
+    at http://localhost:52042/__cypress/tests?p=src/foo.spec.js-986:199:18
+    at http://localhost:52042/__cypress/tests?p=src/foo.spec.js-986:202:10
+```
+-----
+
+Test Status: red
+
+```
 Error
 Timed out after 4000ms. The done() callback was never invoked!
 View stack trace
