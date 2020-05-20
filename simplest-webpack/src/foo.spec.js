@@ -1,4 +1,3 @@
-import jess from 'is-jess'
 
 describe('it', () => {
   it('works', () => {
