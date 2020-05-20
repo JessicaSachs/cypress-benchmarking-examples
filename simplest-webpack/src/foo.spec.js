@@ -1,6 +1,9 @@
-import jess from 'is-jess'
+
 describe('it', () => {
-  it('works', () => {
-    expect(true).to.equal(true)
+  it('works', (done) => {
+    import('is-jess').then((result) => {
+      const jess = result.default
+      done(expect(jess).to.equal(1))
+    })
   })
 })

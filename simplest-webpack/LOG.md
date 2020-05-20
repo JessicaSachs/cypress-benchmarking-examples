@@ -4,6 +4,38 @@ This log will be updated commit-by-commit to allow you to time travel through th
 
 -----
 
+Test Status: red
+
+```
+Error
+Timed out after 4000ms. The done() callback was never invoked!
+View stack trace
+Error: Timed out after `4000ms`. The `done()` callback was never invoked!
+    at http://localhost:50321/__cypress/runner/cypress_runner.js:148042:25
+```
+
+Cypress Errors (first load):
+
+```js
+bootstrap:105 Uncaught (in promise) ChunkLoadError: Loading chunk 0 failed.
+(missing: http://localhost:51587/__cypress/iframes/component/0.foo.spec.js)
+    at Function.requireEnsure [as e] (http://localhost:51587/__cypress/tests?p=src/foo.spec.js-910:106:26)
+    at Context.<anonymous> (http://localhost:51587/__cypress/tests?p=src/foo.spec.js-910:213:25)
+```
+
+Cypress Errors (hmr): 
+
+```js
+bootstrap:105 Uncaught (in promise) ChunkLoadError: Loading chunk 0 failed.
+(missing: http://localhost:50321/__cypress/iframes/component/0.foo.spec.js)
+    at Function.requireEnsure [as e] (http://localhost:50321/__cypress/tests?p=src/foo.spec.js-930:106:26)
+    at Context.<anonymous> (http://localhost:50321/__cypress/tests?p=src/foo.spec.js-930:213:25)
+requireEnsure @ bootstrap:104
+(anonymous) @ foo.spec.js:4
+```
+
+-----
+
 Test Status: green
 Cypress Errors (first load):
 
